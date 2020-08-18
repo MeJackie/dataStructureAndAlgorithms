@@ -1,4 +1,6 @@
 <?php
+
+namespace DataStructureAlgorithms;
 /**
  * 树
  * User: jianjian3

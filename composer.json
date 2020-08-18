@@ -1,0 +1,15 @@
+{
+    "name": "jianjian3/data-structure-and-algorithms",
+    "authors": [
+        {
+            "name": "jianjian",
+            "email": "1203013541@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+       "classmap": [
+           "."
+       ]
+    }
+}

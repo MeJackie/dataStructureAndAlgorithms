@@ -1,4 +1,6 @@
 <?php
+
+namespace DataStructureAlgorithms;
 /**
  * 排序类
  * User: jianjian3
