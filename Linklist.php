@@ -36,6 +36,20 @@ class Linklist
 
         $this->count++;
     }
+
+    public function get($index){
+        if($index > $this->size-1){
+            throw new \Exception("超出链表范围");
+        }
+
+        $prev = $this->head->next;
+        for ($i = 0; $i < $this->size; $i++){
+            if($index == $i){
+                return $prev->val;
+            }
+            $prev = $prev->next;
+        }
+    }
 }
 
 //include_once 'vendor/autoload.php';
