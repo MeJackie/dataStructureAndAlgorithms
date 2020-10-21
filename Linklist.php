@@ -16,7 +16,7 @@ class Node
     }
 }
 
-class Linklist
+class SigleLinklist
 {
     public $head;
 
@@ -91,7 +91,7 @@ class Linklist
     // 更新节点
     public function update($old, $new){
         $current = $this->find($old);
-        $current->value = $new;
+        $current->val = $new;
     }
 
 
@@ -114,17 +114,40 @@ class Linklist
 
 //include_once 'vendor/autoload.php';
 //
-$l = new Linklist();
+$l = new SigleLinklist();
 $l->insetLast(1)->insetLast(2)->insetLast(3);
 $l->display();
 $l->remove(2);
 $l->display();
-$l->remove(1);
+$l->update(3,4);
 $l->display();
 
 
-//$linklist->addLast(2);
-//$linklist->addLast(3);
-//$linklist->addLast(4);
-//$linklist->addLast(5);
-//var_dump($linklist);
+class doubleNodes
+{
+    public $val;
+    public $previous;
+    public $next;
+}
+
+// 双向链表插入
+// $new->next = $current->next;
+// $current->next->previous = $new;
+// $current->next = $new;
+// $new->previous = $current;
+
+// 双向链表删除
+// $current->next->previous = $current->previous;
+// $current->previous->next = $current->next;
+// $current->previous = null;
+// $current->next = null;
+class doubleLinkList
+{
+
+}
+
+
+
+
+
+
